@@ -19,7 +19,7 @@ window.onscroll = function () {
 
 function scrollRotate() {
   let image = document.getElementById("asterisk-logo");
-  image.style.transform = "rotate(" + window.pageYOffset/5 + "deg)";
+  image.style.transform = "rotate(" + window.pageYOffset / 5 + "deg)";
 }
 
 // Button follow cursor while hover by Codegrid
@@ -43,8 +43,8 @@ function scrollRotate() {
   link.forEach((b) => b.addEventListener("mouseleave", animateit));
 })();
 
-// Smooth Page Scrolling
-var loader = document.querySelector(".loader")
+// Preloader
+var loader = document.querySelector(".loader");
 
 window.addEventListener("load", vanish);
 
