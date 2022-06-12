@@ -1,0 +1,27 @@
+.text-hitam {
+  color: #000205;
+}
+
+.text-abu {
+  color: #777777;
+}
+
+.text-putih {
+  color: #ffffff;
+}
+
+.text-orange {
+  color: #FD5D2C;
+}
+
+.bg-hitam {
+  background-color: #000205;
+}
+
+.bg-putih {
+  background-color: #ffffff;
+}
+
+.bg-orange {
+  background-color: #FD5D2C;
+}

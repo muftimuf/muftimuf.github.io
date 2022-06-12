@@ -1,0 +1,340 @@
+/* Global CSS */
+body {
+  background-color: #000205;
+}
+
+.cek {
+  border: solid 1px red;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+body::-webkit-scrollbar:hover {
+  cursor: grab;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #000205;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d34e25;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #fd5d2c;
+}
+
+.project-section,
+.freebies-section,
+.review-section,
+.contact-section {
+  margin-top: 120px !important;
+}
+
+.img-card {
+  position: relative;
+  top: 0;
+  transition: 0.3s ease-in-out;
+}
+.img-card:hover {
+  top: -1rem;
+}
+
+.border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.border-top-dashed {
+  border-top: 1px dashed rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Smooth Scroll */
+
+/* Loader */
+.loader {
+  background-color: #000205;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+.spin {
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.disppear {
+  animation: vanish 1s ease-in-out forwards;
+}
+@keyframes vanish {
+  100% {
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader-asterisk {
+  width: 2rem;
+  height: auto;
+}
+
+/* Navbar */
+.navbar-section {
+  position: fixed;
+  width: 95vw;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  mix-blend-mode: difference;
+}
+
+.nav-text {
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-size: calc(9px + (16 - 9) * ((100vw - 300px) / (1600 - 300)));
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-text-link {
+  font-size: calc(8px + (14 - 8) * ((100vw - 300px) / (1600 - 300)));
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-logo {
+  width: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
+  height: auto;
+}
+
+#asterisk-logo {
+  transition: transform 0.2s linear;
+}
+
+/* Hero Section */
+.layer-1 {
+  background-attachment: fixed;
+}
+
+.hero-section {
+  width: 100%;
+}
+
+.hero-wrap {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-image {
+  position: absolute;
+  /* top: 0; */
+  /* left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; */
+  height: 100vh;
+  width: auto;
+}
+
+.reveal-animation {
+  -webkit-animation: reveal 3s ease-in-out;
+  -moz-animation: reveal 3s ease-in-out;
+  animation: reveal 3s ease-in-out;
+}
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-moz-keyframes reveal {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.stars-animation-1 {
+  -webkit-animation: stars 2s ease-in-out infinite;
+  -moz-animation: stars 2s ease-in-out infinite;
+  animation: stars 2s ease-in-out infinite;
+}
+.stars-animation-2 {
+  -webkit-animation: stars 5s ease-in-out infinite;
+  -moz-animation: stars 5s ease-in-out infinite;
+  animation: stars 5s ease-in-out infinite;
+}
+.stars-animation-3 {
+  -webkit-animation: stars 10s ease-in-out infinite;
+  -moz-animation: stars 10s ease-in-out infinite;
+  animation: stars 10s ease-in-out infinite;
+}
+.stars-animation-4 {
+  -webkit-animation: stars 20s ease-in-out infinite;
+  -moz-animation: stars 20s ease-in-out infinite;
+  animation: stars 20s ease-in-out infinite;
+}
+@-webkit-keyframes stars {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@-moz-keyframes stars {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes stars {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.hero-teks {
+  font-size: calc(24px + (120 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/* About */
+.talk-button {
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #ffffff;
+}
+.talk-button:hover {
+  text-decoration: none !important;
+  padding: 0.5rem 1.5rem;
+}
+
+.about-photo-wrapper {
+  position: relative;
+  height: 720px;
+}
+.about-photo {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+/* Freebies */
+.freebies-card {
+  border: 1px solid #fd5d2c;
+  border-radius: 3px;
+}
+
+/* Tools */
+/* border putih agar logo tools tidak hilang */
+.border-tools {
+  border: 1px solid #000205;
+}
+
+/* Contact */
+.contact-button {
+  text-decoration: underline;
+}
+
+.category-button {
+  font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.category-button:hover {
+  border: 1px solid #fd5d2c;
+  color: #fd5d2c;
+}
+
+.freebiespage-hero-wrap {
+  height: 50vh !important;
+}
+
+/* .category-section {
+  position: sticky;
+  top: 50px;
+  z-index: 20;
+} */
+
+/* Links */
+.link-portal {
+  height: 80px;
+  width: auto;
+}
+
+.link-button {
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000205;
+  transition: all 0.2s ease-in-out;
+}
+.link-button:hover {
+  background-color: #fd5d2c;
+  color: #000205;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    /* top: 50%;
+    transform: translateY(-50%); */
+    height: auto;
+    width: 90vw;
+  }
+
+  .about-photo-wrapper {
+    position: relative;
+    height: 480px;
+  }
+
+  .freebiespage-hero-wrap {
+    height: 30vh !important;
+  }
+}
