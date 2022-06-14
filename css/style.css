@@ -257,7 +257,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Freebies */
 .freebies-card {
-  border: 1px solid #fd5d2c;
+  border: 3px solid #171717;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.freebies-card:hover {
+  border: 3px solid #272727;
   border-radius: 3px;
 }
 
