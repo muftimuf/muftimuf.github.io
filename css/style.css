@@ -69,9 +69,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.disppear {
+.disappear {
   animation: vanish 1s ease-in-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: 0.1s;
 }
 @keyframes vanish {
   100% {
@@ -122,10 +122,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Hero Section */
-.layer-1 {
-  background-attachment: fixed;
-}
-
 .hero-section {
   width: 100%;
 }
@@ -235,6 +231,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* About */
+.about-hello {
+  position: relative;
+  z-index: 2;
+}
+
 .talk-button {
   color: #ffffff;
   padding: 0.5rem 1.5rem;
