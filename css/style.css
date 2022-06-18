@@ -255,6 +255,25 @@ body::-webkit-scrollbar-thumb:hover {
   width: auto;
 }
 
+/* Project */
+.project-card {
+  border: 5px solid #171717;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.project-card:hover {
+  border: 5px solid #272727;
+  border-radius: 3px;
+}
+
+.project-client {
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+.project-client:hover {
+  color: #ffffff;
+}
+
 /* Freebies */
 .freebies-card {
   border: 3px solid #171717;
