@@ -60,6 +60,10 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
 }
 
+.loader-note {
+  font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .spin {
   animation: spin 3s linear infinite;
 }
