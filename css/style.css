@@ -106,7 +106,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .nav-text-link {
-  font-size: calc(8px + (14 - 8) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 700;
+  font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
@@ -237,9 +238,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .talk-button {
-  color: #ffffff;
+  color: #ededed;
   padding: 0.5rem 1.5rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #ededed;
 }
 .talk-button:hover {
   text-decoration: none !important;
@@ -249,11 +250,13 @@ body::-webkit-scrollbar-thumb:hover {
 .about-photo-wrapper {
   position: relative;
   height: 720px;
+  pointer-events: none;
 }
 .about-photo {
   position: absolute;
   height: 100%;
   width: auto;
+  pointer-events: none;
 }
 
 /* Project */
@@ -272,7 +275,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.3s ease-in-out;
 }
 .project-client:hover {
-  color: #ffffff;
+  color: #ededed;
 }
 
 /* Freebies */
@@ -297,10 +300,11 @@ body::-webkit-scrollbar-thumb:hover {
   text-decoration: underline;
 }
 
+/* Freebies Page */
 .category-button {
   font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid #ededed;
+  color: #ededed;
   padding: 0.5rem 1.5rem;
   border-radius: 1.5rem;
   transition: all 0.2s ease-in-out;
@@ -314,12 +318,6 @@ body::-webkit-scrollbar-thumb:hover {
   height: 50vh !important;
 }
 
-/* .category-section {
-  position: sticky;
-  top: 50px;
-  z-index: 20;
-} */
-
 /* Links */
 .link-portal {
   height: 80px;
@@ -328,7 +326,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .link-button {
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: #ededed;
   color: #000205;
   transition: all 0.2s ease-in-out;
 }
